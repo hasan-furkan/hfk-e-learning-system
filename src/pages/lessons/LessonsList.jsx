@@ -42,9 +42,15 @@ const LessonsList = () => {
             justifyItems: 'center',
         }}>
             <Title level={3}>Title</Title>
-            <HeartFilled style={{
-                color: 'red',
-            }} />
+            <Button shape='circle' style={{
+                border: 'none',
+                backgroundColor: '#fafafa',
+                outline: 'none',
+            }}>
+                <HeartFilled style={{
+                    color: 'red',
+                }} />
+            </Button>
         </Flex>
         <Flex gap="middle" vertical>
             <Flex gap="middle">
