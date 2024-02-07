@@ -9,6 +9,8 @@ import logo from "./assets/images/logo.jpeg";
 import {Typography} from "antd";
 import UserDetailComponent from "./pages/user/UserDetailComponent.jsx";
 import ListTableComponent from "./pages/user/ListTableComponent.jsx";
+import LessonsList from "./pages/lessons/LessonsList.jsx";
+import Lessons from "./pages/lessons/index.jsx";
 const { Header, Content, Sider } = Layout;
 const { Title } = Typography;
 function App() {
@@ -80,6 +82,7 @@ function App() {
                                 <Route path="/dashboard" element={<Dashboard/>}/>
                                 <Route path="/user" element={<ListTableComponent/>}/>
                                 <Route path="/user/detail" element={<UserDetailComponent/>}/>
+                                <Route path="/lessons" element={<Lessons/>}/>
                             </Routes>
                         </Content>
                     </Layout>
