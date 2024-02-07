@@ -2,6 +2,7 @@ import LessonsList from "./LessonsList.jsx";
 import SearchListComponent from "./SearchListComponent.jsx";
 import ShowCardList from "./ShowCardList.jsx";
 import FilterLessons from "./FilterLessons.jsx";
+import PaginationLessons from "./PaginationLessons.jsx";
 
 const Lessons = () => {
     return (
@@ -25,6 +26,13 @@ const Lessons = () => {
                 <LessonsList />
                 <LessonsList />
                 <LessonsList />
+            </div>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'end',
+            }}>
+                <PaginationLessons />
             </div>
         </>
     );
