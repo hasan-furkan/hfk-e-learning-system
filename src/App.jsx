@@ -9,15 +9,17 @@ import logo from "./assets/images/logo.jpeg";
 import {Typography} from "antd";
 import UserDetailComponent from "./pages/user/UserDetailComponent.jsx";
 import ListTableComponent from "./pages/user/ListTableComponent.jsx";
-import LessonsList from "./pages/lessons/LessonsList.jsx";
 import Lessons from "./pages/lessons/index.jsx";
+import Auth from "./pages/auth/index.jsx";
 const { Header, Content, Sider } = Layout;
 const { Title } = Typography;
 function App() {
+    const user = false
     const themeDefault = useSelector(state => state.theme);
     return (
         <Router>
-            <Layout>
+            <Auth />
+            {user && <Layout>
                 <Header style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -87,7 +89,7 @@ function App() {
                         </Content>
                     </Layout>
                 </Layout>
-            </Layout>
+            </Layout>}
         </Router>
     );
 }
